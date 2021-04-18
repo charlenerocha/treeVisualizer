@@ -1,0 +1,67 @@
+<!-- Tree Diagram Visualizer -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="main.css">
+
+  <title>Tree Diagram Visualizer</title>
+</head>
+
+<div class="background"></div>
+
+<header>
+    <div class="titleSection">
+        <div id="transition">
+            <h1>TREE Diagram</h1><h2 class="tabOver">Visualizer</h2>
+        </div>
+        <div class="scroll">
+            <button class="seeMore" onclick="scrollChart()">See Pie Chart</button>
+        </div>
+    </div>
+
+    <div class="option">
+        <h2>Number of Options:</h2>
+        <button class="choices" onclick="drawTree(), drawChart(), optionOne()">1</button>
+        <button class="choices" onclick="drawTree(), drawChart(), optionTwo()">2</button>
+        <button class="choices" onclick="drawTree(), drawChart(), optionThree()">3</button>
+        <button class="choices" onclick="drawTree(), drawChart(), optionFour()">4</button>
+        <button class="choices" onclick="drawTree(), drawChart(), optionFive()">5</button>
+        <button class="choices" onclick="drawTree(), drawChart(), optionTen()">10</button>
+        <h2>Number of Times:</h2>
+        <button class="choices" onclick="drawTree(), drawChart(), timeOne()">1</button>
+        <button class="choices" onclick="drawTree(), drawChart(), timeTwo()">2</button>
+        <button class="choices" onclick="drawTree(), drawChart(), timeThree()">3</button>
+        <button class="choices" onclick="drawTree(), drawChart(), timeFour()">4</button>
+        <button class="choices" onclick="drawTree(), drawChart(), timeFive()">5</button>
+        <button class="choices" onclick="drawTree(), drawChart(), timeSix()">6</button>
+        <button class="choices" onclick="drawTree(), drawChart(), timeSeven()">7</button>
+        <button class="choices" onclick="drawTree(), drawChart(), timeEight()">8</button>
+        <button class="choices" onclick="drawTree(), drawChart(), timeNine()">9</button>
+        <button class="choices" onclick="drawTree(), drawChart(), timeTen()">10</button>
+    </div>
+</header>
+
+<section class="main">
+    <canvas id="canvas1" width=300 height=600></canvas>
+</section>
+
+<div class="chart" id="chart"></div>
+
+<script type="text/javascript" src="chart.js"></script>
+<script type="text/javascript" src="tree.js"></script>
+<script type="text/javascript" src="scroll.js"></script>
+<script type="text/javascript" src="changeVariables.js"></script>
+
+<footer>
+</footer>
+
+</html>

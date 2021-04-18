@@ -1,0 +1,157 @@
+@import "words.css";
+
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.background {
+    position: fixed;
+
+    top: -50px;
+    right: -50px;
+    bottom: -50px;
+    left: -50px;
+
+    background-image: url("background.jpg");
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+header {
+    margin: 0;
+}
+
+.titleSection{
+    float: left;
+    width: 75%;
+    padding: 50px 10px 10px 50px;
+}
+
+.tabOver{
+    padding-top: 0.4%;
+    padding-left: 40px;
+}
+
+.option {
+    float: right;
+    width: 25%;
+    padding: 10px;
+}
+
+.scroll{
+    padding-right: 40px;
+}
+
+.seeMoreSpacing{
+    margin-right: 0.4%;
+
+    float: right;
+    font-family: 'Raleway', sans-serif;
+    font-size: large;
+    color: white;
+    background-color: #a86729;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid rgb(68, 68, 68);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+.seeMore{
+    float: right;
+    font-family: 'Raleway', sans-serif;
+    font-size: large;
+    color: white;
+    background-color: #a86729;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid rgb(68, 68, 68);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+.main {
+    float: right;
+
+    width: 100%;    
+    padding-top: 30px;
+    padding-left: 20%;
+}
+
+@media (max-width: 800px) {
+    .titleSection, .option, #main {
+    width: 100%;
+    height: auto;
+    }
+}
+
+#canvas1{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+    
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+.choices{
+    font-family: 'Raleway', sans-serif;
+    
+    color: white;
+    background-color: #a86729;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 1px solid rgb(68, 68, 68);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.choices:hover {
+    background-color: rgb(185, 159, 111);
+}
+
+.boxSubmit{ 
+    width: 100%;
+
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: rgb(165, 208, 243);
+    border: 1.5px solid rgb(0, 0, 0);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+
+    font-size:1vw;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+
+}
+
+.chart {
+    float: right;
+    padding-right: 100px;
+}
+
+@media (max-width: 800px) {
+    .chart, .probability {
+    width: 100%;
+    height: auto;
+    }
+}
+
+footer {
+    padding: 10px;
+}
+  
+  
